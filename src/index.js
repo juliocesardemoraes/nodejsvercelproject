@@ -5,6 +5,10 @@ app.get("/", (req, res) => {
   res.send({ working: true });
 });
 
+app.get("/teste", (req, res) => {
+  res.send({ teste: false });
+});
+
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
